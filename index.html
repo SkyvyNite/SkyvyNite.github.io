@@ -1,10 +1,205 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<svg width="600" height="600">
- <text x="50" y="100" font-family="Verdana" font-size="55" fill="white"
-stroke="black" stroke-width="2"> Даниил
-</text>
-</svg>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a class="logo" href="#">Турист-Про</a>
+            <ul class="navbar__list">
+                <li class="navbar__list-item"><a class="navbar__list-link" href="#">Главная</a></li>
+                <li class="navbar__list-item"><a class="navbar__list-link" href="#catalog">Каталог</a></li>
+                <li class="navbar__list-item"><a class="navbar__list-link" href="#promotions">Акции</a></li>
+                <li class="navbar__list-item"><a class="navbar__list-link" href="#about">О нас</a></li>
+            </ul>
+            <form class="navbar__form-search" action="">
+                <input class="navbar__form-item" type="text" placeholder="Поиск...">
+            </form>
+        </nav>
+    </div>
+</header>
+
+<section id="catalog" class="catalog">
+    <div class="container">
+        <div class="catalog__inner">
+            <div class="title">Каталог</div>
+            <form class="catalog__form-search" action="">
+                <input class="catalog__form-item" type="text" placeholder="Например: Палатки">
+            </form>
+            <ul class="catalog__list">
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/одежда.jpeg" alt="">
+                    <a class="catalog__list-text" href="#">Одежда</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/палатка.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Палатки</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/лодка.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Лодки</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/туристическая_посуда.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Туристическая Посуда</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/сопутствующие_товары.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Сопутствующие товары</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/инвентарь.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Инвентарь</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/рюкзаки.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Одежда</a>
+                </li>
+                <li class="catalog__list-item">
+                    <img class="catalog__list-img" src="img/catalog/ледоруб.jpg" alt="">
+                    <a class="catalog__list-text" href="#">Одежда</a>
+                </li>
+            </ul>
+            <a class="catalog__btn" href="order.html">Заказать</a>
+        </div>
+    </div>
+</section>
+
+<section id="promotions" class="promotions">
+    <div class="container">
+        <div class="promotions__inner">
+            <div class="title">Акции</div>
+            <ul class="promotions__list">
+                <li class="promotions__list-item">
+                    <img class="promotions__list-img" src="img/promotions15.png" alt="">
+                    <div class="promotions__list-name">Скидки 15%</div>
+                    <div class="promotions__list-text">Скидки 15% на все товары из категории "Инвентарь"</div>
+                    <a class="promotions__list-btn" href="">Подробнее</a>
+                </li>
+                <li class="promotions__list-item">
+                    <img class="promotions__list-img" src="img/доставка.webp" alt="">
+                    <div class="promotions__list-name">Бесплатная доставка</div>
+                    <div class="promotions__list-text">Бесплатная доставка от суммы заказа в 1200 рублей.</div>
+                    <a class="promotions__list-btn" href="">Подробнее</a>
+                </li>
+                <li class="promotions__list-item">
+                    <img class="promotions__list-img" src="img/free.jpg" alt="">
+                    <div class="promotions__list-name">+ 2 дня  бесплатно!</div>
+                    <div class="promotions__list-text">К любому тарифу добавлены теперь +2 бесплатных дня.</div>
+                    <a class="promotions__list-btn" href="">Подробнее</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="title">О нас</div>
+            <div class="about__target">Наша цель - обеспечить безопасность и комфортный поход</div>
+            <div class="about__slogan"><span>Наш девиз</span> Путь длиной в тысячи миль начинается с одного клика</div>
+            <div class="about__reviews">
+                <div class="about__reviews-title">Отзывы наших клиентов:</div>
+                <ul class="about__reviews-list">
+                    <li class="about__reviews-item">
+                        <div class="about__user">
+                            <img class="about__user-img" src="img/user-img.png" alt="">
+                            <div class="about__user-info">
+                                <div class="about__user-name">Алексей</div>
+                                <div class="about__user-city">Москва</div>
+                            </div>
+                        </div>
+                        <div class="about__user-review">Спасибо "Турист-Про" за приятное обслуживание и низкие цены!</div>
+                    </li>
+                    <li class="about__reviews-item">
+                        <div class="about__user">
+                            <img class="about__user-img" src="img/user-img.png" alt="">
+                            <div class="about__user-info">
+                                <div class="about__user-name">Екатерина</div>
+                                <div class="about__user-city">Санкт-Петербург</div>
+                            </div>
+                        </div>
+                        <div class="about__user-review">Выражаем благодарность "Турист-Про" за отличную организацию нашего маленького путешествия!</div>
+                    </li>
+                    <li class="about__reviews-item">
+                        <div class="about__user">
+                            <img class="about__user-img" src="img/user-img.png" alt="">
+                            <div class="about__user-info">
+                                <div class="about__user-name">Елена</div>
+                                <div class="about__user-city">Балашиха</div>
+                            </div>
+                        </div>
+                        <div class="about__user-review">Купили горячий тур с кэшбеком в 25%. Кэшбек пришёл через час! Путешествия очень понравились!</div>
+                    </li>
+                    <li class="about__reviews-item">
+                        <div class="about__user">
+                            <img class="about__user-img" src="img/user-img.png" alt="">
+                            <div class="about__user-info">
+                                <div class="about__user-name">Юлия</div>
+                                <div class="about__user-city">Казань</div>
+                            </div>
+                        </div>
+                        <div class="about__user-review">Не первый год приобретаем путевки в этом агентстве. Все отлично!</div>
+                    </li>
+                    <li class="about__reviews-item">
+                        <div class="about__user">
+                            <img class="about__user-img" src="img/user-img.png" alt="">
+                            <div class="about__user-info">
+                                <div class="about__user-name">Марина</div>
+                                <div class="about__user-city">Белгород</div>
+                            </div>
+                        </div>
+                        <div class="about__user-review">Добрый день всем!!!! И особенно турагентству "Турист-Про" в котором работают замечательные и отзывчивые девушки.</div>
+                    </li>
+                    <li class="about__reviews-item">
+                        <div class="about__user">
+                            <img class="about__user-img" src="img/user-img.png" alt="">
+                            <div class="about__user-info">
+                                <div class="about__user-name">Сергей</div>
+                                <div class="about__user-city">Казань</div>
+                            </div>
+                        </div>
+                        <div class="about__user-review">Всем привет! Хочу поблагодарить турагенство "Турист-Про" за отличную работу, очень понравилось отношение к подбору тура, все объяснили и показали!</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="promotions-subs">
+    <div class="container">
+        <div class="promotions-subs__inner">
+            <div class="promotions-subs__title">Подписка на закрытые акции</div>
+            <form class="promotions-subs__form" action="">
+                <input class="promotions-subs__input" type="text" placeholder="Email...">
+                <button class="promotions-subs__btn" type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b8138ccea4af4659c438aa9c7a675eb7cd2940192c9ae2dd1ca8812a51ce608&amp;source=constructor" width="350" height="200" frameborder="0"></iframe>
+            <div class="footer__contact">
+                <a  class="footer__contact-number" href="tel:74991234567">+7 (499) 123 45 67</a>
+                <a  class="footer__contact-mail" href="mailto:Example@gmail.com">Example@gmail.com</a>
+                <div class="footer__contact-address">Зелёная улица, #6</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
